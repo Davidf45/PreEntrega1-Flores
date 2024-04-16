@@ -3,16 +3,17 @@ import { useState } from 'react'
 //import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from "./componentes/NavBar"
+import ItemListContainer from "./componentes/ItemListContainer"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <header className="barra">
+      <div className="barra">
         <NavBar />
         
-      </header>
+      </div>
+      <ItemListContainer mensaje={"ENVIOS A TODO EL MUNDO"} />
       
     </>
   )
